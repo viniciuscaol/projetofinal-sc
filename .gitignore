@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Ambiente Virtual
+venv/
+env/
+.env
+
+# Arquivos de configuração do IDE
+.idea/
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de cache
+*.cache
+
+# Arquivos gerados pelo sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de dependências
+*.egg-info/
+*.egg
+
+# Arquivos de credenciais
+*.pem
+*.key
+*.json
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+*.tfvars.json
+*.tfvars.yaml
+crash.log
+*.zip
+*.tgz
+*.tar.gz
