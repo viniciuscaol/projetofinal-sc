@@ -11,8 +11,8 @@ REGION_NAME = "us-east-1"
 s3_client = boto3.client('s3', region_name=REGION_NAME)
 
 def generate_file():
-    filename = f"arquivo_{datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
-    num_lines = random.randint(5, 100)
+    filename = f"arquivo_{datetime.now().strftime('%d%m%Y%H%M%S')}.txt"
+    num_lines = random.randint(5, 500)
 
     # Gera um arquivo com número aleatório de linhas
     with open(filename, 'w') as file:

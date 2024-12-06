@@ -1,3 +1,6 @@
+.old/
+lambdas3/
+lambdasns/
 # Python
 __pycache__/
 *.py[cod]
