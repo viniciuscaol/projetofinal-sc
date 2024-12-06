@@ -14,6 +14,16 @@ resource "aws_sns_topic_subscription" "sns_subscription_sqs" {
   depends_on = [aws_sqs_queue_policy.sqs_policy]
 }
 
+resource "aws_sns_topic_subscription" "topic_subscription" {
+  topic_arn = aws_sns_topic.sns_projetofinal.arn
+  protocol  = "lambda"
+  endpoint  = aws_lambda_function.lambda_sns.arn
+
+  depends_on = [aws_lambda_permission.lambada_sns]
+}
+
+
+
 # resource "aws_sns_topic_subscription" "sns_subscription_email" {
 #   topic_arn = aws_sns_topic.sns_projetofinal.arn
 #   protocol  = "email"
